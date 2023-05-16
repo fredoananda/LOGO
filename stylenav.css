@@ -1,0 +1,67 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  font-family: "Montserrat", sans-serif;
+  color: #c3c1c1;
+  position: fixed;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1efef;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e7e3e3;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 414px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Mengatur lebar logo dan font-size pada menu */
+  .logo ul li a {
+    font-size: 1.5rem;
+  }
+  /* Mengatur jarak antar link pada menu */
+  .nav-links li {
+    margin: 10px 0;
+  }
+  /* Mengatur background image pada halaman */
+  .page-header {
+    background-size: cover;
+  }
+  /* Mengatur font-size pada judul halaman */
+  .presentation-title {
+    font-size: 3rem;
+  }
+}
